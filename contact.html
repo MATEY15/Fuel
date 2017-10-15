@@ -33,7 +33,7 @@
 	<!-- Header -->
 
 	<header>
-		<div class="top-line color-red">
+		<div class="top-line">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -181,10 +181,10 @@
 		function initialize() {
 			var loc, map, marker, infobox;
 
-			loc = new google.maps.LatLng(-33.890542, 151.274856);
+			loc = new google.maps.LatLng(51.517777, -0.141427);
 
 			map = new google.maps.Map(document.getElementById("map"), {
-				zoom: 12,
+				zoom: 18,
 				center: loc,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			});
