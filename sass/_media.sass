@@ -1,0 +1,395 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px)
+	.contact .top-line .container::before
+		width: 46%
+	.blog-post__baners::after
+		bottom: -2px
+		right: -5px
+	.blog-post__baners::before
+		bottom: -2px
+		left: -5px
+	.wrapper-clients
+		h3
+			margin-bottom: 80px
+	.wrapper-descript
+		height: 100%
+	.wrapper-copyrght,
+	.wrapper-engine
+		padding-top: 35px
+	.tab
+		width: 300px
+		height: 300px
+		.tab-content
+			height: 300px
+	.bottom-tab
+		margin-left: -150px
+	.tabs
+		height: 525px
+	.right-tabs__we-do
+		height: 100%
+		padding-bottom: 80px
+
+@media only screen and (max-width: 1024px)
+	.name-site__gif
+		width: 680px
+	.name-site
+		h1
+			font-size: 52px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px)
+	.contact .top-line .container::before
+		width: 100%
+	.engine-images
+		max-width: 100%
+	.seven-column p
+		font-size: 16px
+		line-height: 18px
+	.seven-column
+		padding: 0 5px 24px
+	.wrapp__name-page,
+	.position-img__baners
+		min-height: 160px
+	.wrapper__download-study
+		max-width: 280px
+		margin: 20px auto 0
+	.tab-list li img
+		max-width: 100%
+	.item__our-work
+		max-height: 210px
+		min-height: 210px
+		overflow: hidden
+		img
+			width: initial
+			max-width: initial
+			height: 100%
+	.wrapper-descript
+		padding-bottom: 84px
+	.tabs
+		max-width: 440px
+		height: 440px
+		margin-bottom: 25px
+	.tab
+		width: 240px
+		height: 240px
+		.tab-content
+			height: 240px
+	.bottom-tab
+		margin-left: -120px
+	.info__our-work
+		left: 60px
+	.owl-next
+		right: 0
+	.owl-prev
+		left: 0
+	.wrapper-engine
+		display: none
+	.what-we-do
+		height: 100%
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+	.header-about p
+		font-size: 20px
+		line-height: 24px
+		margin-bottom: 20px
+
+@media only screen and (max-width: 767px)
+	.nav-services
+		width: 100%
+		overflow-x: auto
+		overflow-y: hidden
+	.item_status-progres
+		margin-bottom: 25px
+	.element::-webkit-scrollbar
+		width: 0
+	.element
+		-ms-overflow-style: none
+	.element
+		overflow: -moz-scrollbars-none
+	.tab-list li
+		width: 215px
+		float: left
+	.wrap-tab-list
+		overflow: auto
+		width: 100%
+	.logo
+		position: relative
+		z-index: 9999
+	.wrapper__our-work .info-page__our-work
+		width: 64% !important
+	.col-md-12 .item__our-work,
+	.col-md-6 .item__our-work
+		max-width: 640px
+		margin: 0 auto 30px
+	.col-md-4 .item__our-work
+		max-width: 375px
+		margin: 0 auto 30px
+	.what-we-do
+		padding-bottom: 24px
+	.our-work
+		padding-bottom: 100px
+		margin-bottom: 0
+	.wrapper-clients
+		padding-top: 20px
+	.wrapper-clients
+		.col-md-3
+			width: 25%
+			float: left
+	footer
+		border-top: 1px solid $color-white
+		.col-sm-4
+			width: 33.3%
+			float: left
+	.right-tabs__we-do
+		padding-top: 80px
+
+@media only screen and (max-width: 720px)
+	.contact
+		background-image: none
+	.name-site
+		h1
+			font-size: 42px
+	.blog-post__name-page
+		font-size: 44px
+		line-height: 46px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 640px)
+	.work-post__content p
+		font-size: 18px
+		line-height: 20px
+		margin-bottom: 15px
+	.vertical__name-page .desc-baner
+		font-size: 32px
+		line-height: 34px
+	.vertical__name-page
+		padding-top: 0
+	.header-about p
+		font-size: 18px
+		line-height: 20px
+	.header
+		max-height: 570px !important
+		min-height: 100% !important
+		height: 100%
+	.what-we-do,
+	.our-clients
+		#svg__we-do
+			path
+				fill: $color-white
+	.info__our-work
+		padding: 10px
+		bottom: 20px
+		h3
+			font-size: 22px
+			margin-bottom: 5px
+		p
+			font-size: 18px
+	.name-site__gif
+		width: 540px !important
+
+@media only screen and (max-width: 600px)
+	.social-small ul li a
+		margin: 0 2px
+	.name-site__gif
+		width: 90% !important
+	#logo-name
+		width: 140px
+
+@media only screen and (max-width: 540px)
+	.color-black .menu li a:before
+		display: none
+	.social-small ul li a
+		width: 35px
+		height: 35px
+	.info__our-work
+		min-width: 400px
+	.wrapper-clients .col-md-3
+		width: 33.3%
+	.menu
+		li
+			margin-right: 10px
+	.open-menu
+		display: inline-block
+	.header-menu
+		.menu
+			display: none
+			margin-top: 15px
+			box-shadow: 0 5px 5px 0 rgba(51, 51, 51, 0.15)
+	.wrapper-menu
+		width: 100%
+	.header-menu
+		width: 100%
+		position: absolute
+		left: 0
+		top: 0
+		text-align: right
+		z-index: 1000
+		.menu
+			width: 100%
+			background: #fff
+			padding: 15px
+			li
+				display: block
+				margin-right: 0
+				a
+					font-size: 18px
+					text-decoration: underline
+					color: #333
+
+@media only screen and (max-width: 480px)
+	.blog-post__name-page
+		font-size: 32px
+		line-height: 34px
+	.vertical__name-page .desc-baner
+		font-size: 26px
+		line-height: 28px
+	.wrapp__name-page
+		min-height: 115px
+	.position-img__baners
+		min-height: 120px
+	.wrapper__our-work .col-md-12 .info-page__our-work,
+	.wrapper__our-work .col-md-6 .info-page__our-work
+		width: 80%
+	footer .col-sm-4
+		width: 50%
+	.hidde-480
+		display: none
+	.info__our-work
+		display: none
+	.name-site
+		h1
+			font-size: 36px
+			line-height: 38px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 414px)
+	.wrapper-clients h3
+		margin-bottom: 20px
+	.item-client__icon
+		height: 100px
+		margin-bottom: 20px
+	.heading-style__h3
+		font-size: 46px
+		line-height: 48px
+		margin-bottom: 20px
+	.wrapper-clients .col-md-3
+		width: 100%
+	.tabs
+		max-width: 384px
+		height: 384px
+	.tab
+		width: 185px
+		height: 185px
+		.tab-content
+			height: 185px
+	.bottom-tab
+		margin-left: -92px
+	.name-site
+		h1
+			font-size: 28px
+			line-height: 30px
+
+@media only screen and (max-width: 375px)
+	.header-about__object .circul
+		margin: 0 5px
+
+@media only screen and (max-width: 360px)
+	.header-about h1
+		font-size: 48px
+		line-height: 48px
+		margin-bottom: 20px
+	.left-tabs__we-do .tab-content
+		font-size: 18px
+		line-height: 20px
+	.tabs
+		height: 350px
+
+@media only screen and (max-width: 320px)
+	.social-small ul li a
+		margin: 0
+	.name-site
+		h1
+			font-size: 32px
+			line-height: 34px
+
+@media only screen and (max-width: 320px)
+	.header-about__object .circul
+		margin: 0
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px)
+	/**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px)
+	/**/
+
+@media only screen and (min-width: 541px)
+	.menu
+		display: block !important
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px)
+	/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px)
+	/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px)
+	/**/
+
+@media only screen and (max-height: 1600px)
+	.name-site
+		margin-top: 380px
+
+@media only screen and (max-height: 1300px)
+	.name-site
+		margin-top: 350px
+
+@media only screen and (max-height: 1200px)
+	.name-site
+		margin-top: 240px
+
+@media only screen and (max-height: 1080px)
+	.name-site
+		margin-top: 200px
+
+@media only screen and (max-height: 950px)
+	.name-site
+		margin-top: 140px
+
+@media only screen and (max-height: 800px)
+	.name-site
+		margin-top: 75px
+
+@media only screen and (max-height: 720px)
+	.header
+		min-height: 720px
+	.name-site__gif
+		width: 625px
+
+@media only screen and (max-height: 640px)
+	.header
+		min-height: 640px
+	.name-site__gif
+		width: 600px
+
+@media only screen and (max-height: 600px)
+	/**/
+
+@media only screen and (max-height: 540px)
+	.header
+		min-height: 540px
+	.name-site__gif
+		width: 90% !important
