@@ -19,6 +19,65 @@ $(function() {
 		}
 	}
 
+	$(document).ready(function() {
+		$("#services1").hover(
+			function(){
+				$(this).attr("src", "img/services-animate/services1.gif");
+			},
+			function(){
+				$(this).attr("src", "img/services-animate/stacic-services1.jpg");
+			}
+			);
+		$("#services2").hover(
+			function(){
+				$(this).attr("src", "img/services-animate/services2.gif");
+			},
+			function(){
+				$(this).attr("src", "img/services-animate/stacic-services2.jpg");
+			}
+			);
+		$("#services3").hover(
+			function(){
+				$(this).attr("src", "img/services-animate/services3.gif");
+			},
+			function(){
+				$(this).attr("src", "img/services-animate/stacic-services3.jpg");
+			}
+			);
+		$("#services4").hover(
+			function(){
+				$(this).attr("src", "img/services-animate/services4.gif");
+			},
+			function(){
+				$(this).attr("src", "img/services-animate/stacic-services4.jpg");
+			}
+			);
+		$("#services5").hover(
+			function(){
+				$(this).attr("src", "img/services-animate/services5.gif");
+			},
+			function(){
+				$(this).attr("src", "img/services-animate/stacic-services5.jpg");
+			}
+			);
+		$("#services6").hover(
+			function(){
+				$(this).attr("src", "img/services-animate/services6.gif");
+			},
+			function(){
+				$(this).attr("src", "img/services-animate/stacic-services6.jpg");
+			}
+			);
+		$("#services7").hover(
+			function(){
+				$(this).attr("src", "img/services-animate/services7.gif");
+			},
+			function(){
+				$(this).attr("src", "img/services-animate/stacic-services7.jpg");
+			}
+			);
+	});
+
 	// if(matchMedia){
 	// 	var screen = window.matchMedia("(max-width:767px)");
 	// 	screen.addListener(changes);
