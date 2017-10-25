@@ -42,6 +42,10 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px)
+	.right-tabs__we-do
+		min-height: 100%
+	.red-left__before::before
+		display: none
 	.contact .top-line .container::before
 		width: 100%
 	.engine-images
@@ -347,7 +351,16 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px)
-	/**/
+	.container.full-container
+		width: 100% !important
+
+@media only screen and (min-width: 1800px)
+	.container.full-container
+		width: 100% !important
+
+@media only screen and (min-width: 2560px)
+	.container.full-container
+		width: 100% !important
 
 @media only screen and (max-height: 1600px)
 	.name-site
