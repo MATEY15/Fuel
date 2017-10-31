@@ -102,9 +102,9 @@ $(function() {
 	});
 
 	// Scroll
-	$(".scroll-down").mPageScroll2id({
-		//offset: 60
-	});
+	// $(".scroll-down").mPageScroll2id({
+	// 	//offset: 60
+	// });
 
 	$('.our-work__carousel').owlCarousel({
 		loop:true,
@@ -155,7 +155,7 @@ $(function() {
 		$('#tab-list li', container).removeClass('active').eq(index).addClass('active');
 		$('#tab-pane #pane', container).hide().removeClass('active').eq(index).fadeIn().addClass('active');
 	});
-	function tabs () {
+	function tabs() {
 		$('#tab-container').each(function() {
 			$('#tab-list li', this).eq(0).addClass('active');
 			$('#tab-pane #pane', this).eq(0).fadeIn().addClass('active');
