@@ -140,6 +140,14 @@ $(function() {
 		// }
 	});
 
+	// var waypoint = new Waypoint({
+	// 			element: $('.our-work'),
+	// 			handler: function() {
+	// 				alert('Ok');
+	// 			},
+	// 			offset: '20%'
+	// 		});
+
 	$(".tab_item").not(":first").hide();
 	$(".wrapper__we-do .tab").click(function() {
 		$(".wrapper__we-do .tab").removeClass("active").eq($(this).index()).addClass("active");

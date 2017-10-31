@@ -241,7 +241,7 @@ textarea
 .color-black
 	.logo-svg
 		path
-			fill: #000
+			fill: #c61409
 	.open-menu i
 		color: #000
 	.menu
@@ -301,11 +301,16 @@ textarea
 	padding-top: 20px
 	padding-bottom: 20px
 	background: $color-red
-	//position: fixed
+	position: initial
 	left: 0
 	top: 24px
 	width: 100%
 	z-index: 9999
+
+.hom-page
+	.top-line
+		background: none !important
+		position: fixed
 
 .open-menu
 	display: none
@@ -318,8 +323,8 @@ textarea
 	background: $color-red 
 .header
 	background: $color-red
-	height: 100vh
-	min-height: 800px
+	//height: 100vh
+	//min-height: 800px
 	position: relative
 
 .header-menu,
@@ -356,12 +361,13 @@ textarea
 			&:hover:before
 				opacity: 1
 				bottom: -4px
-
+.name-site__offset
+	text-align: center
 .name-site
 	text-align: center
 .name-site__description
 	font-size: 64px
-	line-height: 66px
+	line-height: 86px
 	color: $color-white
 
 #svg10,
@@ -399,12 +405,30 @@ textarea
 
 /* What we do */
 
-.what-we-do
-	height: 100vh
-	min-height: 840px
-	position: relative
-	padding-bottom: 40px
+.section
 	overflow: hidden
+
+.what-we-do
+	position: relative
+	&::before
+		content: ""
+		display: block
+		width: 41.666%
+		height: 1000%
+		background: $color-red
+		position: absolute
+		top: 0
+		right: 0
+		z-index: -1
+	//height: 100vh
+	//min-height: 840px
+	//position: relative
+	//padding-bottom: 40px
+	//overflow: hidden
+	& .fp-scroller
+		//overflow: initial !important
+	& .fp-scrollable
+		//overflow: visible !important
 #svg__we-do
 	path
 		fill: $light-blue
@@ -412,22 +436,23 @@ textarea
 .right-tabs__we-do
 	background: $color-red
 	padding-top: 150px
-	min-height: 840px
-	height: 100vh
+	//min-height: 840px
+	//height: 100vh
 
 .red-left__before
+	height: 840px
 	position: relative
 	z-index: 10
-	&::before
-		content: ""
-		display: block
-		width: 1000%
-		height: 1000%
-		background: $color-red
-		position: absolute
-		top: 0
-		left: 0
-		z-index: -1
+	// &::before
+	// 	content: ""
+	// 	display: block
+	// 	width: 1000%
+	// 	height: 1000%
+	// 	background: $color-red
+	// 	position: absolute
+	// 	top: 0
+	// 	left: 0
+	// 	z-index: -1
 
 .left-tabs__we-do
 	padding-top: 70px
@@ -543,13 +568,13 @@ button#moveDown
 	outline: none
 
 .our-work.fp-section.fp-table
-	display: block !important
+	//display: block !important
 
 .our-work
-	padding-top: 70px
-	padding-bottom: 150px
+	//padding-top: 70px
+	//padding-bottom: 150px
 	position: relative
-	margin-bottom: 40px
+	//margin-bottom: 40px
 
 .info__our-work
 	min-width: 450px
@@ -601,7 +626,17 @@ button#moveDown
 
 .our-clients
 	position: relative
-	overflow: hidden
+	//overflow-x: hidden
+	&::before
+		content: ""
+		display: block
+		width: 41.666%
+		height: 1000%
+		background: $color-red
+		position: absolute
+		top: 0
+		right: 0
+		z-index: -1
 
 .item-client__icon
 	width: 100%
@@ -621,7 +656,7 @@ button#moveDown
 	background: $color-red
 	padding-top: 150px
 	padding-bottom: 100px
-	height: 100vh
+	//height: 100vh
 
 .wrapper-descript__item-info
 	font-size: 18px
@@ -658,6 +693,10 @@ footer
 	width: 100%;
 	.social-small
 		margin-top: 50px
+
+.hom-page
+	footer
+		position: relative
 
 #logo-name
 	width: 180px
@@ -1255,6 +1294,6 @@ footer
 /* Full Screen */
 
 .fp-tableCell
-	display: block !important
+	//display: block !important
 
 @import "media" // Всегда в конце

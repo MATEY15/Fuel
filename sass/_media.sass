@@ -34,6 +34,9 @@
 		padding-bottom: 80px
 
 @media only screen and (max-width: 1024px)
+	.our-clients::before,
+	.what-we-do::before
+		width: 43%
 	.name-site__gif
 		width: 680px
 	.name-site
@@ -42,6 +45,24 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px)
+	.our-clients::before,
+	.what-we-do::before
+		display: none
+	.hom-page .top-line
+		top: 0
+		background: #c61409 !important
+	#moveDown
+		display: none
+	.color-black
+		.logo-svg
+			path
+				fill: #fff
+		.open-menu i
+			color: #fff
+		.menu
+			li
+				a
+					color: #fff
 	.right-tabs__we-do
 		min-height: 100%
 	.red-left__before::before
@@ -342,12 +363,13 @@
 		display: block !important
 
 /* Small Devices, Tablets */
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 720px)
 	/**/
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width: 992px)
-	/**/
+@media only screen and (min-width: 768px)
+	.container.full-container
+		width: 100% !important
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px)
@@ -388,13 +410,13 @@
 
 @media only screen and (max-height: 720px)
 	.header
-		min-height: 720px
+		//min-height: 720px
 	.name-site__gif
 		width: 625px
 
 @media only screen and (max-height: 640px)
 	.header
-		min-height: 640px
+		//min-height: 640px
 	.name-site__gif
 		width: 600px
 
@@ -403,6 +425,6 @@
 
 @media only screen and (max-height: 540px)
 	.header
-		min-height: 540px
+		//min-height: 540px
 	.name-site__gif
 		width: 90% !important
